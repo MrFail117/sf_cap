@@ -117,7 +117,7 @@ def main():
         seen = False
 
         # Progress time as long as the three star wasn't capped
-        while time != time_limit and not capped:
+        while time_count != time_limit and not capped:
 
             # Keeps track of whether or not to skip a time unit
             skip = False
@@ -142,7 +142,7 @@ def main():
 
                     # Capture chance = 25%
                     if success_n > 75:
-                        success_tracker[time] += 1
+                        success_tracker[time_count] += 1
                         capped == True
                         skip == True
                     # Failed the capture
