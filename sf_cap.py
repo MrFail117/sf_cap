@@ -93,7 +93,7 @@ def main():
     
         # Twenty eight days and you can only pick after 12 hours have passed
         # So two picks a day -> 56 picks in 28 days
-        time = 0
+        time_count = 0
         time_limit = 56
 
         # Three days for the reset timer to become available once used
@@ -197,7 +197,7 @@ def main():
 
             # Increment the time and charges. Count down the
             # refresh timer
-            time += 1
+            time_count += 1
             refresh_time -= 1
             charges += 1
 
